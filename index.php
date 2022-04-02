@@ -36,10 +36,8 @@
         <form>
           <label for="distancia" name="distancia" min="1" max="1000000">
           <input type="number" id="distancia">Distância em quilômetros a ser percorrida</input>
-          
           <label for="distancia" name="distancia" min="1" max="1000000">
           <input type="number" id="distancia">Distância em quilômetros a ser percorrida</input> 
-          
         </form>
       </div>
     </div>
