@@ -29,7 +29,7 @@ html {
   font-size: 15px;
 }
 
-.descricao, .calculadora {
+.descricao, .calculadora, .form-calculadora {
   border: 0.02px solid rgb(230, 230, 230);
 }
 
@@ -37,9 +37,12 @@ html {
   padding: 20px;
 }
 
-.lista-combustiveis {
-  padding: 20px;
-  font-weight: bold;
+.lista-combustives {
+  margin: 10px;
+}
+
+.lista-combustives .tipo{
+  font-weight: 700;
 }
 
 .descricao-inner {
@@ -51,6 +54,5 @@ html {
 }
 
 .form-inner {
-  padding: 10px;
-
+  padding: 20px;
 }
