@@ -34,23 +34,23 @@
       <div class="form-calculadora">
         <h1 class="titulo"><i class="ri-bus-2-fill"></i>   Cálculo do Valor(R$) do consumo</h1>
         <div class="form-inner">
-        <form>
-          <label for="distancia" name="distancia" min="1" max="1000000">
-          <input type="number" id="distancia">Distância em quilômetros a ser percorrida</input>
-          
-          <label for="distancia" name="distancia" min="1" max="1000000">
-          <input type="number" id="distancia">Consumo de combustível do veículo em (km/l)</input>
+          <form>
+            <label for="distancia" name="distancia" min="1" max="1000000">
+            <input type="number" id="distancia">Distância em quilômetros a ser percorrida</input>
+            
+            <label for="distancia" name="distancia" min="1" max="1000000">
+            <input type="number" id="distancia">Consumo de combustível do veículo em (km/l)</input>
 
-          <label for="calcular" name="distancia">
-          <input type="submit" id="calcular" value="Calcular"></input>
-
-        </form>
+            <label for="calcular" name="distancia">
+            <input type="submit" id="calcular" value="Calcular"></input>
+          </form>
         </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="footer-inner">
+      <p>Made by <a href="https://github.com.br/j-guerreiro">j-guerreiro</a></p>
     </div>
   </footer>
 </body>
