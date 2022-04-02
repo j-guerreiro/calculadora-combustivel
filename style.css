@@ -1,0 +1,55 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Hubballi', cursive;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  line-height: 1.2;
+}
+
+.calculadora {
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+  border: 0.02px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  flex-flow: row;
+  row-gap: 25px;
+
+}
+
+.titulo {
+  background-color: rgb(168, 207, 243);
+  color: rgb(83, 83, 255);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.descricao, .calculadora {
+  border: 0.02px solid rgb(230, 230, 230);
+}
+
+.paragrafo {
+  padding: 20px;
+}
+
+.lista-combustiveis {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.descricao-inner {
+
+}
+
+.form-calculadora {
+
+}
+
+.form-inner {
+
+}
