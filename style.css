@@ -31,10 +31,12 @@ p, ul, li, label {
   color: rgb(83, 83, 255);
   padding: 10px;
   font-size: 15px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .descricao, .calculadora, .form-calculadora {
   border: 0.02px solid rgb(230, 230, 230);
+  border-radius: 10px;
 }
 
 .paragrafo {

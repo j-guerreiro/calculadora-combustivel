@@ -17,7 +17,7 @@
     <div class="calculadora">
       <!--  primeiro conteiner | descricao -->
       <div class="descricao">
-        <h1 class="titulo"><i class="ri-gas-station-fill"></i>  Instruções  </h1>
+        <h1 class="titulo"><i class="ri-gas-station-fill ri-xl"></i>  Instruções  </h1>
         <div class="descricao-inner">
           <p class="paragrafo">Esta aplicação tem como finalidade demonstrar os valores  que serão gastos 
             com combustível durante um viagem. 
@@ -32,7 +32,7 @@
       </div>
       <!-- segundo conteiner | formulário -->
       <div class="form-calculadora">
-        <h1 class="titulo"><i class="ri-bus-2-fill"></i>   Cálculo do Valor(R$) do consumo</h1>
+        <h1 class="titulo"><i class="ri-bus-2-fill ri-xl"></i>   Cálculo do Valor(R$) do consumo</h1>
         <div class="form-inner">
           <form>
             <label for="distancia" name="distancia" min="1" max="1000000">
@@ -48,6 +48,7 @@
       </div>
     </div>
   </main>
+  <!-- rodapé -->
   <footer>
     <div class="footer-inner">
       <p>Made by <a href="https://github.com.br/j-guerreiro">j-guerreiro</a></p>
