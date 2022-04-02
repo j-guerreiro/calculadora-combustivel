@@ -34,12 +34,12 @@
       <div class="form-calculadora">
         <h1 class="titulo"><i class="ri-bus-2-fill ri-xl"></i>   Cálculo do Valor(R$) do consumo</h1>
         <div class="form-inner">
-          <form>
+          <form action="calcular.php">
             <label for="distancia" name="distancia" min="1" max="1000000">
-            <input type="number" id="distancia">Distância em quilômetros a ser percorrida</input>
+            <input type="number" id="distancia" required>Distância em quilômetros a ser percorrida</input>
             
             <label for="distancia" name="distancia" min="1" max="1000000">
-            <input type="number" id="distancia">Consumo de combustível do veículo em (km/l)</input>
+            <input type="number" id="distancia" required>Consumo de combustível do veículo em (km/l)</input>
 
             <label for="calcular" name="distancia">
             <input type="submit" id="calcular" value="Calcular"></input>
