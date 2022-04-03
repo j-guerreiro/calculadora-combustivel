@@ -20,7 +20,7 @@
         <h1 class="titulo"><i class="ri-gas-station-fill ri-xl"></i>  Instruções  </h1>
         <div class="descricao-inner">
           <p class="paragrafo">Esta aplicação tem como finalidade demonstrar os valores  que serão gastos 
-            com combustível durante um viagem. 
+            com combustível durante uma viagem. 
             Os valores tem como base o consumo do seu veículo, e a distância a ser percorrida. 
           </p>
           <ul class="lista-combustives">
