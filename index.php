@@ -36,13 +36,13 @@
         <div class="form-inner">
           <form action="calcular.php">
             <label for="distancia" name="distancia" min="1" max="1000000">
-            <input type="number" id="distancia" required>Distância em quilômetros a ser percorrida</input>
+            <input class="entrada" type="number" id="distancia" required>Distância em quilômetros a ser percorrida</input>
             
             <label for="distancia" name="distancia" min="1" max="1000000">
-            <input type="number" id="distancia" required>Consumo de combustível do veículo em (km/l)</input>
+            <input class="entrada" type="number" id="distancia" required>Consumo de combustível do veículo em (km/l)</input>
 
             <label for="calcular" name="distancia">
-            <input type="submit" id="calcular" value="Calcular"></input>
+            <input class="btn-calcular" type="submit" id="calcular" value="Calcular"></input>
           </form>
         </div>
       </div>

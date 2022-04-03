@@ -8,6 +8,7 @@
 
 html {
   line-height: 1.2;
+  background-color: rgb(222, 237, 255);
 }
 
 p, ul, li, label {
@@ -23,7 +24,7 @@ p, ul, li, label {
   border-radius: 10px;
   flex-flow: row;
   row-gap: 25px;
-
+  height: 85%;
 }
 
 .titulo {
@@ -37,6 +38,8 @@ p, ul, li, label {
 .descricao, .calculadora, .form-calculadora {
   border: 0.02px solid rgb(230, 230, 230);
   border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
 }
 
 .paragrafo {
@@ -51,14 +54,6 @@ p, ul, li, label {
   font-weight: 700;
 }
 
-.descricao-inner {
-
-}
-
-.form-calculadora {
-
-}
-
 .form-inner {
   padding: 20px;
 
@@ -69,4 +64,37 @@ p, ul, li, label {
   justify-content: center;
   padding: 20px;
   margin:20px;
+}
+
+.btn-voltar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-inner, .btn-calcular{  
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: rgb(168, 207, 243);
+  width: 150px;
+  color: rgb(83, 83, 255);
+  border-radius: 5mm;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border: 0.02px solid rgb(230, 230, 230);
+  box-shadow: 5px 5px 5px 1px rgb(199, 199, 199);
+  margin: 20px;
+}
+
+.btn-inner:hover, .btn-calcular:hover {
+  background-color: rgb(99, 99, 255);
+  color: rgb(243, 241, 241);
+  
+}
+
+.entrada {
+  margin: 20px;
 }
