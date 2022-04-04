@@ -1,9 +1,11 @@
 <?php
 
+if($_POST){
   echo $_REQUEST['distancia'];
   echo $_REQUES['consumo'];
-
   $resultado = $distancia * $consumo;
+}
+  
 
 
 ?>
