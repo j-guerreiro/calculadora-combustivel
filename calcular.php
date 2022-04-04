@@ -1,7 +1,7 @@
 <?php
 
-  echo $_GET['distancia'];
-  echo $_GET['consumo'];
+  echo $_REQUEST['distancia'];
+  echo $_REQUES['consumo'];
 
   $resultado = $distancia * $consumo;
 

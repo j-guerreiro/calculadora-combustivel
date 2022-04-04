@@ -25,7 +25,7 @@
           </p>
           <p class="paragrafo">Selecione o combustível do seu veículo:</p>
         </div>
-          <form class="form-combustiveis" action="calcular.php">
+          <form class="form-combustiveis" action="calcular.php" method="post">
             <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool"></input>
             <label class="tipo" for="alcool">Álcool</label>
             <input class="tipo" type="radio" id="diesel" name="combustivel" value="diesel"></input>
@@ -38,7 +38,7 @@
       <div class="form-calculadora">
         <h1 class="titulo"><i class="ri-bus-2-fill ri-xl"></i>   Cálculo do Valor(R$) do consumo</h1>
         <div class="form-inner">
-          <form action="calcular.php">
+          <form action="calcular.php" method="post">
             <label for="distancia" name="distancia" min="1" max="1000000">
             <input class="entrada" type="number" id="distancia" required>Distância em quilômetros a ser percorrida</input>
             
