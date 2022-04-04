@@ -23,7 +23,7 @@
             com combustível durante uma viagem. 
             Os valores tem como base o consumo do seu veículo, e a distância a ser percorrida. 
           </p>
-          <p class="paragrafo">Selecione o combustível:</p>
+          <p class="paragrafo">Selecione o combustível do seu veículo:</p>
         </div>
           <form class="form-combustiveis" action="calcular.php">
             <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool"></input>
