@@ -23,12 +23,16 @@
             com combustível durante uma viagem. 
             Os valores tem como base o consumo do seu veículo, e a distância a ser percorrida. 
           </p>
-          <ul class="lista-combustives">
-            <li class="tipo">Álcool</li>
-            <li class="tipo">Diesel</li>
-            <li class="tipo">Gasolina</li>
-          </ul>
+          <p class="paragrafo">Selecione o combustível:</p>
         </div>
+          <form class="form-combustiveis" action="calcular.php">
+            <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool"></input>
+            <label class="tipo" for="alcool">Álcool</label>
+            <input class="tipo" type="radio" id="diesel" name="combustivel" value="diesel"></input>
+            <label class="tipo" for="diesel">Diesel</label>
+            <input class="tipo" type="radio" id="gasolina" name="combustivel" value="gasolina"></input>
+            <label class="tipo" for="gasolina">Gasolina</label>
+          </form>
       </div>
       <!-- segundo conteiner | formulário -->
       <div class="form-calculadora">
@@ -38,8 +42,8 @@
             <label for="distancia" name="distancia" min="1" max="1000000">
             <input class="entrada" type="number" id="distancia" required>Distância em quilômetros a ser percorrida</input>
             
-            <label for="distancia" name="distancia" min="1" max="1000000">
-            <input class="entrada" type="number" id="distancia" required>Consumo de combustível do veículo em (km/l)</input>
+            <label for="consumo" name="consumo min="1" max="1000000">
+            <input class="entrada" type="number" id="consumo" required>Consumo de combustível do veículo em (km/l)</input>
 
             <label for="calcular" name="distancia">
             <input class="btn-calcular" type="submit" id="calcular" value="Calcular"></input>

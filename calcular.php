@@ -1,5 +1,10 @@
 <?php
 
+  echo $_GET['distancia'];
+  echo $_GET['consumo'];
+
+  $resultado = $distancia * $consumo;
+
 
 ?>
 
@@ -24,7 +29,7 @@
       <div class="descricao">
         <h1 class="titulo"><i class="ri-gas-station-fill ri-xl"></i>  Resultado do Cálculo  </h1>
         <div class="descricao-inner">
-          <p class="paragrafo"> O resultado irá aparecer aqui.</p>
+          <p class="paragrafo"> Você irá gastar R$ <?php echo "{$resultado}"?>.</p>
         </div>
       </div>
     </div>
