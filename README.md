@@ -13,9 +13,9 @@ Codificar o layout com HTML/CSS e a parte lógica do APP com PHP.
 # Layouts 
 
 ### Interface principal
-![](assets/layout-final.png)
+![](/api/assets/layout-final.png)
 
 ### Interface resultado
 
-![](assets/layout-resultado.png)
+![](/api/assets/layout-resultado.png)
 
