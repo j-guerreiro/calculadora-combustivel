@@ -1,13 +1,27 @@
 <?php
 
 if($_POST){
-  echo $_REQUEST['distancia'];
-  echo $_REQUES['consumo'];
-  $resultado = $distancia * $consumo;
+  $distancia =  $_REQUEST['distancia'];
+  $consumo =  $_REQUEST['consumo'];
+  $tipoCombustivel = $_REQUEST['combustivel'];
+  $litros = $distancia / $consumo;
+
+  if($tipoCombustivel == 'Gasolina') {
+    $precoLitro = 7.24;
+    $totalGasto = round($precoLitro * $litros, 2);
+  }
+  else if ($tipoCombustivel == 'Álcool') {
+    $precoLitro = 5.04;
+    $totalGasto = round($precoLitro * $litros, 2);
+  }
+  else {
+    $precoLitro = 5.89;
+    $totalGasto = round($precoLitro * $litros, 2);
+  }
+
+  $mensagem = "<p>Distancia a percorrer: {$distancia}km <br> Consumo do veículo: {$consumo}Km/l 
+  <br> Combustivel: {$tipoCombustivel}<br>Total R$ {$totalGasto}</p>";
 }
-  
-
-
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +45,7 @@ if($_POST){
       <div class="descricao">
         <h1 class="titulo"><i class="ri-gas-station-fill ri-xl"></i>  Resultado do Cálculo  </h1>
         <div class="descricao-inner">
-          <p class="paragrafo"> Você irá gastar R$ <?php echo "{$resultado}"?>.</p>
+          <p class="paragrafo">Aqui estão suas informações:<?php echo "{$mensagem}"?></p>
         </div>
       </div>
     </div>
