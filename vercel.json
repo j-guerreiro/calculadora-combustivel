@@ -5,6 +5,7 @@
     }
   },
   "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" }
+    { "src": "/(.*)",  "home": "/api/index.php" },
+    { "src": "/(.*)",  "resultado": "/api/calcular.php" }
   ]
 }
