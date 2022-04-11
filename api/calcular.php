@@ -1,32 +1,33 @@
 <?php
 
-if($_POST){
+if($_POST) {
+
   $distancia =  $_REQUEST['distancia'];
   $consumo =  $_REQUEST['consumo'];
   $tipoCombustivel = $_REQUEST['combustivel'];
   $litros = $distancia / $consumo;
 
-  if($tipoCombustivel == 'Gasolina') {
-    $tipoCombustivel = "Gasolina";
+  if($tipoCombustivel == 'gasolina') {
+    $tipoCombustivel = 'Gasolina';
     $precoLitro = 7.24;
     $totalGasto = round($precoLitro * $litros, 2);
   }
-  else if ($tipoCombustivel == 'Álcool') {
-    $tipoCombustivel = "Álcool";
+  else if ($tipoCombustivel == 'alcool') {
+    $tipoCombustivel = 'Álcool';
     $precoLitro = 5.04;
     $totalGasto = round($precoLitro * $litros, 2);
   }
-  else {
-    $tipoCombustivel = "Diesel";
+  else if($tipoCombustivel == 'diesel') {
+    $tipoCombustivel = 'Diesel';
     $precoLitro = 5.89;
     $totalGasto = round($precoLitro * $litros, 2);
   }
 
-  $mensagem = "<p>Distancia a percorrer: {$distancia}km <br> Consumo do veículo: {$consumo}Km/l 
+  $mensagem = "<p><b>Distância a percorrer:</b> {$distancia}km <br> Consumo do veículo: {$consumo}Km/l 
   <br> Combustivel: {$tipoCombustivel}<br>Total R$ {$totalGasto}</p>";
 }
 else {
-  $mensagem = "<p>Não foi possível validar as informações...  =(</p>";
+  $mensagem = "<p>Não foi possível validar as informações...  =( </p>";
 }
 ?>
 

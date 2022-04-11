@@ -23,10 +23,17 @@
             com combustível durante uma viagem. 
             Os valores tem como base o consumo do seu veículo, e a distância a ser percorrida. 
           </p>
-          <p class="paragrafo">Selecione o combustível do seu veículo:</p>
         </div>
-          <form class="form-combustiveis" action="calcular.php" method="post">
-            <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool" required></input>
+      </div>
+      <!-- segundo conteiner | formulário -->
+      <div class="form-calculadora">
+        <h1 class="titulo"><i class="ri-bus-2-fill ri-xl"></i>   Cálculo do Valor(R$) do consumo</h1>
+        <div class="form-inner">
+        <p class="paragrafo">Selecione o combustível do seu veículo:</p>
+
+          <form action="calcular.php" method="POST">
+
+          <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool" required></input>
             <label class="tipo" for="alcool">Álcool (etanol)</label>
 
             <input class="tipo" type="radio" id="diesel" name="combustivel" value="diesel" required></input>
@@ -34,13 +41,7 @@
 
             <input class="tipo" type="radio" id="gasolina" name="combustivel" value="gasolina" required></input>
             <label class="tipo" for="gasolina">Gasolina (gasolina comum)</label>
-          </form>
-      </div>
-      <!-- segundo conteiner | formulário -->
-      <div class="form-calculadora">
-        <h1 class="titulo"><i class="ri-bus-2-fill ri-xl"></i>   Cálculo do Valor(R$) do consumo</h1>
-        <div class="form-inner">
-          <form action="calcular.php" method="post">
+
             <input class="entrada" type="number" id="distancia" name="distancia" required>Distância em quilômetros a ser percorrida</input>
             <label for="distancia" min="1" max="1000000">
             
