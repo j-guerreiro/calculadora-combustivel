@@ -33,7 +33,7 @@
 
           <form action="calcular.php" method="POST">
 
-          <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool" required></input>
+            <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool" required></input>
             <label class="tipo" for="alcool">Álcool (etanol)</label>
 
             <input class="tipo" type="radio" id="diesel" name="combustivel" value="diesel" required></input>
@@ -50,6 +50,7 @@
             
             <input class="btn-calcular" type="submit" id="calcular" value="Calcular" name="calcular"></input>
             <label for="calcular">
+              
           </form>
         </div>
       </div>

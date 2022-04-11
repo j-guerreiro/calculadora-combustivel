@@ -5,29 +5,38 @@ if($_POST) {
   $distancia =  $_REQUEST['distancia'];
   $consumo =  $_REQUEST['consumo'];
   $tipoCombustivel = $_REQUEST['combustivel'];
-  $litros = $distancia / $consumo;
 
-  if($tipoCombustivel == 'gasolina') {
-    $tipoCombustivel = 'Gasolina';
-    $precoLitro = 7.24;
-    $totalGasto = round($precoLitro * $litros, 2);
+  if(is_numeric($distancia) && is_numeric($consumo)) {
+    if($distancia > 0 && $consumo > 0) {
+      $litros = $distancia / $consumo;
+      if($tipoCombustivel == 'gasolina') {
+        $tipoCombustivel = 'Gasolina';
+        $precoLitro = 7.24;
+        $totalGasto = round($precoLitro * $litros, 2);
+      }
+      else if ($tipoCombustivel == 'alcool') {
+        $tipoCombustivel = 'Álcool';
+        $precoLitro = 5.04;
+        $totalGasto = round($precoLitro * $litros, 2);
+      }
+      else if($tipoCombustivel == 'diesel') {
+        $tipoCombustivel = 'Diesel';
+        $precoLitro = 5.89;
+        $totalGasto = round($precoLitro * $litros, 2);
+      }
+      $mensagem = "<p><b>Distância a percorrer:</b> {$distancia}km <br> <b>Consumo do veículo:</b> {$consumo}Km/l 
+      <br> <b>Combustível:</b> {$tipoCombustivel}<br> <b>Total:</b> R$ {$totalGasto}</p>";
+    }
+    else {
+      $mensagem = "<p style='color:red; font-weight:bold; padding:20px;'>Dados inválidos!</p>";
+    }   
   }
-  else if ($tipoCombustivel == 'alcool') {
-    $tipoCombustivel = 'Álcool';
-    $precoLitro = 5.04;
-    $totalGasto = round($precoLitro * $litros, 2);
+  else {
+    $mensagem = "<p style='color:red; font-weight:bold; padding:20px;'>Dados inválidos!</p>";
   }
-  else if($tipoCombustivel == 'diesel') {
-    $tipoCombustivel = 'Diesel';
-    $precoLitro = 5.89;
-    $totalGasto = round($precoLitro * $litros, 2);
-  }
-
-  $mensagem = "<p><b>Distância a percorrer:</b> {$distancia}km <br> Consumo do veículo: {$consumo}Km/l 
-  <br> Combustivel: {$tipoCombustivel}<br>Total R$ {$totalGasto}</p>";
 }
 else {
-  $mensagem = "<p>Não foi possível validar as informações...  =( </p>";
+  $mensagem = "<p style='color:red; font-weight:bold; padding:20px;'>Não foi possível realizar o cálculo!</p>";
 }
 ?>
 
