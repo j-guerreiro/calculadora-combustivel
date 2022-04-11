@@ -24,7 +24,7 @@ if($_POST) {
         $precoLitro = 5.89;
         $totalGasto = round($precoLitro * $litros, 2);
       }
-      $mensagem = "<p><b>Distância a percorrer:</b> {$distancia}km <br> <b>Consumo do veículo:</b> {$consumo}Km/l 
+      $mensagem = "<p style='padding:20px;'><b>Distância a percorrer:</b> {$distancia}km <br> <b>Consumo do veículo:</b> {$consumo}Km/l 
       <br> <b>Combustível:</b> {$tipoCombustivel}<br> <b>Total:</b> R$ {$totalGasto}</p>";
     }
     else {
