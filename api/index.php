@@ -34,18 +34,18 @@
           <form action="calcular.php" method="POST">
 
             <input class="tipo" type="radio" id="alcool" name="combustivel" value="alcool" required></input>
-            <label class="tipo" for="alcool">Álcool (etanol)</label>
+            <label class="tipo" for="alcool"> Álcool (etanol) </label>
 
             <input class="tipo" type="radio" id="diesel" name="combustivel" value="diesel" required></input>
-            <label class="tipo" for="diesel">Diesel (óleo diesel)</label>
+            <label class="tipo" for="diesel"> Diesel (óleo diesel) </label>
 
             <input class="tipo" type="radio" id="gasolina" name="combustivel" value="gasolina" required></input>
-            <label class="tipo" for="gasolina">Gasolina (gasolina comum)</label>
+            <label class="tipo" for="gasolina"> Gasolina (gasolina comum) </label>
 
-            <input class="entrada" type="number" id="distancia" name="distancia" required>Distância em quilômetros a ser percorrida</input>
+            <input class="entrada" type="number" id="distancia" name="distancia" required><span id="variavel">Distância</span> em quilômetros</input>
             <label for="distancia" min="1" max="1000000">
             
-            <input class="entrada" type="number" id="consumo" name="consumo" required>Consumo de combustível do veículo em (km/l)</input>
+            <input class="entrada" type="number" id="consumo" name="consumo" required><span id="variavel">Consumo</span> em Km/l</input>
             <label for="consumo" consumo min="1" max="1000000">
             
             <input class="btn-calcular" type="submit" id="calcular" value="Calcular" name="calcular"></input>

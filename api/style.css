@@ -11,19 +11,18 @@ html {
   background-color: rgb(222, 237, 255);
 }
 
-p, ul, li, label {
-  color: rgb(87, 87, 87);
+p, ul, li {
+  color: rgb(109, 109, 109);
 }
 
 .calculadora {
   padding: 25px;
-  display: flex;
+  display: flex calc(30% - 20px);
   justify-content: space-evenly;
   margin: 50px;
   border: 0.02px solid rgb(230, 230, 230);
   border-radius: 10px;
   flex-flow: row wrap;
-  row-gap: 25px;
   height: 85%;
 }
 
@@ -51,13 +50,16 @@ p, ul, li, label {
   border-radius: 10px;
 }
 
-.form-combustiveis .tipo {
+.form-calculadora .tipo {
   font-weight: 700;
-  padding: 10px;
+  color: rgb(80, 80, 80);
+  padding: 5px;
+  margin: 5px;
 }
 
 .paragrafo {
   padding: 30px;
+  font-weight: bold;
   text-align: justify;
 }
 
@@ -111,5 +113,13 @@ p, ul, li, label {
 }
 
 .entrada {
-  margin: 20px;
+  margin: 10px;
+  padding: 5px;
+  border: 0.02px solid rgb(182, 182, 182);
+  border-radius: 5mm;
+}
+
+#variavel {
+  color: rgb(80, 80, 80);
+  font-weight: bold;
 }
