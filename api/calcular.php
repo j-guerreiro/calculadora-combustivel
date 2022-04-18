@@ -9,6 +9,28 @@ if($_POST) {
   if(is_numeric($distancia) && is_numeric($consumo)) {
     if($distancia > 0 && $consumo > 0) {
       $litros = $distancia / $consumo;
+
+      switch($tipoCombustivel){
+
+        case 'gasolina':
+          $tipoCombustivel = 'Gasolina';
+          $precoLitro = 7.24;
+          $totalGasto = round($precoLitro * $litros, 2);
+          break;
+        
+        case 'alcool':
+          $tipoCombustivel = 'Álcool';
+          $precoLitro = 5.04;
+          $totalGasto = round($precoLitro * $litros, 2);
+          break;
+
+        case 'diesel':
+          $tipoCombustivel = 'Diesel';
+          $precoLitro = 5.89;
+          $totalGasto = round($precoLitro * $litros, 2);
+      }
+
+      /*
       if($tipoCombustivel == 'gasolina') {
         $tipoCombustivel = 'Gasolina';
         $precoLitro = 7.24;
@@ -23,7 +45,9 @@ if($_POST) {
         $tipoCombustivel = 'Diesel';
         $precoLitro = 5.89;
         $totalGasto = round($precoLitro * $litros, 2);
-      }
+      } */
+
+      
       $mensagem = "<p style='padding:20px;'><b>Distância a percorrer:</b> {$distancia}km <br> <b>Consumo do veículo:</b> {$consumo}Km/l 
       <br> <b>Combustível:</b> {$tipoCombustivel}<br> <b>Total:</b> R$ {$totalGasto}</p>";
     }
