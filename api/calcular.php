@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * This function prints out results.
+ * 
+ * @return float $saidaCalculo
+ * @param int $distancia
+ * @param float $consumo
+ * @param string $tipoCombustivel
+ * @param float $totalGasto
+ */
 function printResultado($distancia, $consumo, $tipoCombustivel,$totalGasto){
   
   $saidaCalculo =<<<MENSAGEM
