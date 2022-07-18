@@ -18,8 +18,9 @@ function printResultado($distancia, $consumo, $tipoCombustivel,$totalGasto){
 
 function verificaCombustivel($tipoCombustivel, $litros, $distancia, $consumo){
 
-  switch($tipoCombustivel){
 
+  switch($tipoCombustivel){
+    
     case 'gasolina':
       $tipoCombustivel = 'Gasolina';
       $precoLitro = 7.24;
