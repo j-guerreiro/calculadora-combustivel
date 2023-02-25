@@ -1,3 +1,10 @@
+<!-- header -->
+<?php require_once 'header.php'; ?>
+<!-- results -->
+<?php require_once 'result.php'; ?>
+<!-- footer -->
+<?php require_once 'footer.php'; ?>
+
 <?php
 
 /**
@@ -28,9 +35,7 @@ function printResultado($distancia, $consumo, $tipoCombustivel, $totalGasto)
 function verificaCombustivel($tipoCombustivel, $litros, $distancia, $consumo)
 {
 
-
   switch ($tipoCombustivel) {
-
     case 'gasolina':
       $tipoCombustivel = 'Gasolina';
       $precoLitro = 7.24;
@@ -55,14 +60,12 @@ function verificaCombustivel($tipoCombustivel, $litros, $distancia, $consumo)
 }
 
 if ($_POST) {
-
   $distancia = $_REQUEST['distancia'];
   $consumo = $_REQUEST['consumo'];
   $tipoCombustivel = $_REQUEST['combustivel'];
 
   if (is_numeric($distancia) && is_numeric($consumo)) {
     if ($distancia > 0 && $consumo > 0) {
-
       $litros = $distancia / $consumo;
       $mensagem = verificaCombustivel($tipoCombustivel, $litros, $distancia, $consumo);
     } else {
@@ -76,9 +79,3 @@ if ($_POST) {
 }
 
 ?>
-<!-- header -->
-<?php require_once 'header.php'; ?>
-<!-- results -->
-<?php require_once 'result.php'; ?>
-<!-- footer -->
-<?php require_once 'footer.php'; ?>
