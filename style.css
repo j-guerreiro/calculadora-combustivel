@@ -32,6 +32,11 @@ p, ul, li {
   padding: 20px;
   font-size: 15px;
   border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.titulo > #app {
+  background-color:rgb(219, 219, 219);
 }
 
 .descricao, .calculadora, .form-calculadora {
@@ -104,6 +109,10 @@ p, ul, li {
   border: 0.02px solid rgb(230, 230, 230);
   box-shadow: 5px 5px 5px 1px rgb(199, 199, 199);
   margin: 20px;
+}
+
+.btn-inner > button {
+  text-decoration: none;
 }
 
 .btn-inner:hover, .btn-calcular:hover {
