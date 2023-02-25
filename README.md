@@ -9,13 +9,3 @@ Codificar o layout com HTML/CSS e a parte lógica do APP com PHP.
 # Objetivos Específicos
 
 - Praticar programação de forma deliberada
-
-# Layouts 
-
-### Interface principal
-![](/api/assets/layout-final.png)
-
-### Interface resultado
-
-![](/api/assets/layout-resultado.png)
-
