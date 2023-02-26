@@ -9,6 +9,6 @@
       </div>
     </div>
     <div class="btn-voltar">
-        <a class="btn-inner" href="index.php">Recomeçar</a>
+        <a class="btn-inner" href="../index.php">Recomeçar</a>
     </div>
   </main>

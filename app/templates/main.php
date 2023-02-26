@@ -1,4 +1,3 @@
-
 <!--  conteiner app -->
   <div class="calculadora">
     <!--  primeiro conteiner | descricao -->
@@ -6,16 +5,16 @@
       <h1 class="titulo"><i class="ri-apps-fill"></i>  APPS  </h1>
       <div class="descricao-inner">
         <button class="btn-inner">
-          <a href="calculadora-combustivel.php">Acessar Calculadora</a>
+          <a href="../templates/calculadora-combustivel.php">Acessar Calculadora</a>
         </button>
         <button class="btn-inner">
-          <a href="calculadora-combustivel.php">APP Placeholder</a>
+          <a href="#">APP Placeholder</a>
         </button>
         <button class="btn-inner">
-          <a href="calculadora-combustivel.php">APP Placeholder</a>
+          <a href="#">APP Placeholder</a>
         </button>
         <button class="btn-inner">
-          <a href="calculadora-combustivel.php">APP Placeholder</a>
+          <a href="#">APP Placeholder</a>
         </button>
       </div>
     </div>
