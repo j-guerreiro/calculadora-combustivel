@@ -6,13 +6,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./assets/slide-1-gas-pump.jpg" class="d-block w-50 h-75" alt="...">
+      <img src="../assets/slide-1-gas-pump.jpg" class="d-block w-50 h-75 rounded-3" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="./assets/slide-2-calculating-expenses.jpg" class="d-block w-50 h-75" alt="...">
+      <img src="../assets/slide-2-calculating-expenses.jpg" class="d-block w-50 h-75 rounded-3" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="./assets/slide-3-plant-coin.jpg" class="d-block w-50 h-75" alt="...">
+      <img src="../assets/slide-3-plant-coin.jpg" class="d-block w-50 h-75 rounded-3" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
